@@ -1,0 +1,16 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/x0k/data-structures.git",
+  "author": "x0k",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "dependencies": {
+    "mdx-deck": "^1.8.2"
+  }
+}
