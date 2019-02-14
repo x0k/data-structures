@@ -1,8 +1,11 @@
 import { CodeSurfer } from "mdx-deck-code-surfer"
 import nightOwl from "prism-react-renderer/themes/nightOwl"
 
+#### <Report\>
 # Структуры данных
 # JavaScript
+
+#### Красильнков Роман
 
 ---
 
@@ -13,51 +16,15 @@ import nightOwl from "prism-react-renderer/themes/nightOwl"
 
 <CodeSurfer
   title="JSON"
-  code={require("!raw-loader!./snippets/jsonExample.js")}
+  code={require("!raw-loader!./snippets/json/data.js")}
   lang="json"
   showNumbers={false}
   theme={nightOwl}
   steps={[
-    { range: [3, 12], notes: "Объект" },
-    { range: [2, 23], notes: "Массив" },
-    { range: [1, 24] }
-  ]}
-/>
-
----
-
-# Object
-# { }
-
----
-
-<CodeSurfer
-  title="Инициализация"
-  code={require("!raw-loader!./snippets/initObject.js")}
-  lang="javascript"
-  showNumbers={false}
-  theme={nightOwl}
-  steps={[
-    { range: [1, 3], notes: "Конструкторы" },
-    { range: [5, 9], notes: "Определение заначений в конструкторе" },
-    { range: [12, 14], notes: "Определение значений после создания" },
-    { range: [16, 28], notes: "Результат" }
-  ]}
-/>
-
----
-
-<CodeSurfer
-  title="Инициализация"
-  code={require("!raw-loader!./snippets/initObject.js")}
-  lang="javascript"
-  showNumbers={false}
-  theme={nightOwl}
-  steps={[
-    { range: [1, 3], notes: "Конструкторы" },
-    { range: [5, 9], notes: "Определение заначений в конструкторе" },
-    { range: [12, 14], notes: "Определение значений после создания" },
-    { range: [16, 28], notes: "Результат" }
+    { range: [2, 4], notes: "Пары ключ: значение" },
+    { range: [5, 12], notes: "Объект" },
+    { range: [13, 18], notes: "Массив" },
+    { range: [1, 19] }
   ]}
 />
 
@@ -69,15 +36,177 @@ import nightOwl from "prism-react-renderer/themes/nightOwl"
 ---
 
 <CodeSurfer
-  title="Инициализация"
-  code={require("!raw-loader!./snippets/initArray.js")}
+  title="Объявление"
+  code={require("!raw-loader!./snippets/array/init.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+/>
+
+---
+
+<CodeSurfer
+  title="Свойства"
+  code={require("!raw-loader!./snippets/array/props.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+/>
+
+---
+
+<CodeSurfer
+  title="Методы"
+  code={require("!raw-loader!./snippets/array/methods.js")}
   lang="javascript"
   showNumbers={false}
   theme={nightOwl}
     steps={[
-    { range: [1, 5], notes: "Конструкторы" },
-    { lines: [7], notes: "Определение заначений в конструкторе" },
-    { range: [9, 11], notes: "Вставка значений после создания" },
-    { range: [13, 17], notes: "Результат" }
+    { lines: [1], notes: "Объявление" },
+    { range: [3, 7], notes: "Проверки" },
+    { range: [9, 15], notes: "Методы вставки/извлечения элементов" },
+    { range: [17, 22], notes: "Метод для удаления и вставки элементов" }
   ]}
 />
+
+---
+
+<CodeSurfer
+  title="Методы итерации"
+  code={require("!raw-loader!./snippets/array/usage.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+    steps={[
+    { lines: [1], notes: "Объявление" },
+    { range: [3, 7], notes: "Циклы" },
+    { range: [9, 17], notes: "Методы высшего порядка" },
+  ]}
+/>
+
+---
+
+# Object
+# { }
+
+---
+
+<CodeSurfer
+  title="Объявление"
+  code={require("!raw-loader!./snippets/object/init.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 3], notes: "Способы создать объект" },
+    { range: [5, 10], notes: "Определение заначений в конструкторе" },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Свойства"
+  code={require("!raw-loader!./snippets/object/props.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 10], notes: "Пример объекта" },
+    { range: [12, 16], notes: "Чтение свойств" },
+    { range: [18, 23], notes: "Модификация свойств" }
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Методы"
+  code={require("!raw-loader!./snippets/object/methods.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { lines: [1], notes: "Объявление" },
+    { range: [3, 6], notes: "Цикл по свойствам объекта" },
+    { range: [8, 13], notes: "Извлечение данных" },
+    { range: [15, 19], notes: "Модификация доступа" }
+  ]}
+/>
+
+---
+
+# Современные возможности
+# ESNext
+
+---
+
+<CodeSurfer
+  title="Улучшения"
+  code={require("!raw-loader!./snippets/esnext/improvements.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 12], notes: "Объявление" },
+    { range: [14, 21], notes: "Деструктуризация" },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Set"
+  code={require("!raw-loader!./snippets/esnext/set.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 5], notes: "Объявление" },
+    { range: [7, 16], notes: "Взаимодействие" },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Map"
+  code={require("!raw-loader!./snippets/esnext/map.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 9], notes: "Объявление" },
+    { range: [11, 22], notes: "Взаимодействие" },
+  ]}
+/>
+
+---
+
+# JSON
+
+---
+
+<CodeSurfer
+  title="JSON"
+  code={require("!raw-loader!./snippets/json/show.js")}
+  lang="js"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 19] },
+    { range: [21, 24], notes: "Конвертация" }
+  ]}
+/>
+
+---
+
+# Красильнков Роман
+
+#### Структуры данных JavaScript
+
+#### </Report\>
+
+
+
+

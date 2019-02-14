@@ -6,7 +6,7 @@ const OPERATORS = {
 }
 
 function* parse (infixExpression) {
-  let value = '';
+  let value = ''
   for (let char of infixExpression) {
     if ('0123456789.'.includes(char))
       value += char
