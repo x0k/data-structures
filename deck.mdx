@@ -1,13 +1,83 @@
+import { CodeSurfer } from "mdx-deck-code-surfer"
+import nightOwl from "prism-react-renderer/themes/nightOwl"
+
 # Структуры данных
 # JavaScript
 
-```notes
-a2132
-```
+---
+
+# JSON
+#### JavaScript Object Notation
 
 ---
 
-# { Object }
+<CodeSurfer
+  title="JSON"
+  code={require("!raw-loader!./snippets/jsonExample.js")}
+  lang="json"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [3, 12], notes: "Объект" },
+    { range: [2, 23], notes: "Массив" },
+    { range: [1, 24] }
+  ]}
+/>
 
 ---
 
+# Object
+# { }
+
+---
+
+<CodeSurfer
+  title="Инициализация"
+  code={require("!raw-loader!./snippets/initObject.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 3], notes: "Конструкторы" },
+    { range: [5, 9], notes: "Определение заначений в конструкторе" },
+    { range: [12, 14], notes: "Определение значений после создания" },
+    { range: [16, 28], notes: "Результат" }
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Инициализация"
+  code={require("!raw-loader!./snippets/initObject.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+  steps={[
+    { range: [1, 3], notes: "Конструкторы" },
+    { range: [5, 9], notes: "Определение заначений в конструкторе" },
+    { range: [12, 14], notes: "Определение значений после создания" },
+    { range: [16, 28], notes: "Результат" }
+  ]}
+/>
+
+---
+
+# Array
+# [ ]
+
+---
+
+<CodeSurfer
+  title="Инициализация"
+  code={require("!raw-loader!./snippets/initArray.js")}
+  lang="javascript"
+  showNumbers={false}
+  theme={nightOwl}
+    steps={[
+    { range: [1, 5], notes: "Конструкторы" },
+    { lines: [7], notes: "Определение заначений в конструкторе" },
+    { range: [9, 11], notes: "Вставка значений после создания" },
+    { range: [13, 17], notes: "Результат" }
+  ]}
+/>
