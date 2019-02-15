@@ -58,10 +58,8 @@ function calc (postfixExpression) {
   return stack.pop()
 }
 
-function eval_ (expression) {
+function eval (expression) {
   const parsed = parse(expression)
   const polish = toPostfix(parsed)
   return calc(polish)
 }
-
-console.log(eval_('15/(7-(1+1))*3-(2+(1+1))'))
