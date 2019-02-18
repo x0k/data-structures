@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx --no-html"
+    "build": "mdx-deck build deck.mdx --no-html",
+    "pdf": "mdx-deck pdf deck.mdx --no-sandbox"
   },
   "dependencies": {
     "mdx-code": "1.1.3",
